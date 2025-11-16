@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Wallet } from 'lucide-react';
+import { Bot, Wallet } from 'lucide-react';
 
 export function Header() {
   return (
@@ -15,6 +15,14 @@ export function Header() {
               On-Chain Paradox Machine
             </span>
           </Link>
+          <nav className="flex items-center gap-6 text-sm">
+            <Link
+              href="/leaderboard"
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+            >
+              Leaderboard
+            </Link>
+          </nav>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
             <Button variant="outline" className="border-primary/50 hover:bg-primary/20 hover:text-primary-foreground">
